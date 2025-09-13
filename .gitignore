@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Data files - IMPORTANT: Don't upload patient data
+data/raw/
+data/processed/
+*.json
+*.csv
+*.xlsx
+*.xls
+
+# Model files - Usually too large for GitHub
+models/
+*.joblib
+*.pkl
+*.pickle
+*.h5
+
+# Log files
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Results and exports
+results_export_*.json
+output/
