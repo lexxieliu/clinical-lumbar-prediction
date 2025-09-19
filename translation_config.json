@@ -1,0 +1,42 @@
+{
+  "translation": {
+    "enabled": true,
+    "cache_enabled": true,
+    "max_cache_size": 1000,
+    "openai_model": "gpt-3.5-turbo",
+    "korean_fields": [
+      "When the pain start",
+      "When the pain became severe",
+      "etc",
+      "Plan",
+      "clinical_notes",
+      "notes",
+      "description"
+    ],
+    "translation_providers": {
+      "openai": {
+        "enabled": true,
+        "priority": 1
+      },
+      "replicate": {
+        "enabled": true,
+        "priority": 2
+      },
+      "google": {
+        "enabled": true,
+        "priority": 3
+      },
+      "deepl": {
+        "enabled": true,
+        "priority": 4
+      }
+    }
+  },
+  "api_keys": {
+    "openai_api_key": "your_openai_api_key_here",
+    "replicate_api_key": "your_replicate_api_key_here",
+    "replicate_model_version": "db21e45d3f7023abc2a46ee38a23973f6dce16bb082a930b0c49861f96d1e5bf",
+    "google_api_key": "your_google_api_key_here",
+    "deepl_api_key": "your_deepl_api_key_here"
+  }
+}
