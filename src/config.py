@@ -86,3 +86,38 @@ DATA_VALIDATION = {
     'required_fields': ['Study'],
     'text_fields': ['clinical_notes', 'notes', 'description']
 }
+
+# Translation configuration
+TRANSLATION_CONFIG = {
+    'enabled': True,
+    'cache_enabled': True,
+    'max_cache_size': 1000,
+    'openai_model': 'gpt-3.5-turbo',
+    'korean_fields': [
+        'When the pain start',
+        'When the pain became severe',
+        'etc',
+        'Plan',
+        'clinical_notes',
+        'notes',
+        'description'
+    ],
+    'translation_providers': {
+        'openai': {
+            'enabled': True,
+            'priority': 1
+        },
+        'replicate': {
+            'enabled': True,
+            'priority': 2
+        },
+        'google': {
+            'enabled': True,
+            'priority': 3
+        },
+        'deepl': {
+            'enabled': True,
+            'priority': 4
+        }
+    }
+}

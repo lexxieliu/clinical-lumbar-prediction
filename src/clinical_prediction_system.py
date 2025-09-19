@@ -30,17 +30,19 @@ class ClinicalPredictionSystem:
     Orchestrates data loading, training, and prediction workflows
     """
     
-    def __init__(self, data_path: str = None):
+    def __init__(self, data_path: str = None, enable_translation: bool = None):
         """
         Initialize the clinical prediction system
         
         Args:
             data_path: Path to clinical data directory or file
+            enable_translation: Whether to enable Korean to English translation
         """
         self.data_path = Path(data_path) if data_path else DATA_DIR / "raw"
         self.data_loader = None
         self.predictor = None
         self.training_data = None
+        self.enable_translation = enable_translation
         
         # Setup logging
         setup_logging()
@@ -67,7 +69,7 @@ class ClinicalPredictionSystem:
                     return False
             
             # Initialize data loader
-            self.data_loader = ClinicalDataLoader(str(self.data_path))
+            self.data_loader = ClinicalDataLoader(str(self.data_path), enable_translation=self.enable_translation)
             
             # Load data
             raw_data = self.data_loader.load_json_data()
@@ -358,6 +360,18 @@ class ClinicalPredictionSystem:
             }
         
         return summary
+    
+    def get_translation_info(self) -> dict:
+        """
+        Get translation system information
+        
+        Returns:
+            Dictionary with translation information
+        """
+        if not self.data_loader:
+            return {"translation_enabled": False, "error": "Data loader not initialized"}
+        
+        return self.data_loader.get_translation_stats()
 
 
 def main():

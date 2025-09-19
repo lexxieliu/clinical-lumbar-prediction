@@ -10,7 +10,8 @@ import numpy as np
 from pathlib import Path
 from typing import List, Dict, Any, Tuple, Optional
 
-from .config import TREATMENT_TYPES, RADIOLOGY_TYPES, DATA_VALIDATION
+from .config import TREATMENT_TYPES, RADIOLOGY_TYPES, DATA_VALIDATION, TRANSLATION_CONFIG
+from .translation import ClinicalTranslator, create_translator_from_config
 
 logger = logging.getLogger(__name__)
 
@@ -20,17 +21,34 @@ class ClinicalDataLoader:
     Handles loading and preprocessing of clinical data from JSON files
     """
     
-    def __init__(self, data_path: str):
+    def __init__(self, data_path: str, enable_translation: bool = None):
         """
         Initialize data loader
         
         Args:
             data_path: Path to data directory or JSON file
+            enable_translation: Whether to enable Korean to English translation
         """
         self.data_path = Path(data_path)
         self.treatment_types = TREATMENT_TYPES
         self.radiology_types = RADIOLOGY_TYPES
         self.validation_config = DATA_VALIDATION
+        
+        # Initialize translation
+        self.translation_enabled = enable_translation if enable_translation is not None else TRANSLATION_CONFIG['enabled']
+        self.translator = None
+        
+        if self.translation_enabled:
+            try:
+                self.translator = create_translator_from_config()
+                if self.translator.is_available():
+                    logger.info("Translation service initialized successfully")
+                else:
+                    logger.warning("Translation service not available - continuing without translation")
+                    self.translation_enabled = False
+            except Exception as e:
+                logger.error(f"Failed to initialize translation service: {e}")
+                self.translation_enabled = False
     
     def load_json_data(self) -> List[Dict]:
         """
@@ -66,7 +84,29 @@ class ClinicalDataLoader:
             return []
         
         # Validate loaded data
-        return self._validate_data(all_data)
+        validated_data = self._validate_data(all_data)
+        
+        # Translate Korean text if enabled
+        if self.translation_enabled and self.translator:
+            logger.info("Translating Korean text to English...")
+            translated_data = []
+            for i, record in enumerate(validated_data):
+                try:
+                    translated_record = self.translator.translate_clinical_record(record)
+                    translated_data.append(translated_record)
+                    
+                    # Log progress for large datasets
+                    if (i + 1) % 10 == 0:
+                        logger.info(f"Translated {i + 1}/{len(validated_data)} records")
+                        
+                except Exception as e:
+                    logger.error(f"Translation failed for record {i}: {e}")
+                    translated_data.append(record)  # Use original record if translation fails
+            
+            logger.info(f"Translation completed for {len(translated_data)} records")
+            return translated_data
+        
+        return validated_data
     
     def _load_single_file(self, file_path: Path) -> Optional[List[Dict]]:
         """
@@ -255,3 +295,21 @@ class ClinicalDataLoader:
         treatment_names = list(self.treatment_types.keys())
         radiology_names = list(self.radiology_types)
         return treatment_names, radiology_names
+    
+    def get_translation_stats(self) -> Dict[str, Any]:
+        """
+        Get translation statistics
+        
+        Returns:
+            Dictionary with translation statistics
+        """
+        if not self.translator:
+            return {"translation_enabled": False}
+        
+        stats = {
+            "translation_enabled": self.translation_enabled,
+            "translator_available": self.translator.is_available(),
+            "cache_stats": self.translator.get_cache_stats()
+        }
+        
+        return stats

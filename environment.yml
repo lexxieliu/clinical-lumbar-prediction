@@ -38,3 +38,8 @@ dependencies:
     - pytest-cov>=4.0.0
     - sphinx>=5.0.0
     - sphinx-rtd-theme>=1.0.0
+    # Translation dependencies
+    - requests>=2.28.0
+    - openai>=1.0.0
+    - google-cloud-translate>=3.0.0
+    - deepl>=1.0.0
