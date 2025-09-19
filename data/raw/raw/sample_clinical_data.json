@@ -1,0 +1,202 @@
+[
+  {
+    "patient_id": "P001",
+    "Study": {
+      "X-RAY": "Lumbar spine shows disc herniation L4-L5",
+      "CT": "",
+      "MRI": "MRI lumbar spine demonstrates disc herniation L4-L5 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with disc herniation L4-L5. Symptoms include lower back pain with right leg radiation. Clinical examination and imaging studies performed. Recommended treatments: PEN, MED, f/u."
+  },
+  {
+    "patient_id": "P002",
+    "Study": {
+      "X-RAY": "",
+      "CT": "CT lumbar spine reveals spinal stenosis L3-L4-L5",
+      "MRI": "MRI lumbar spine demonstrates spinal stenosis L3-L4-L5 with associated findings",
+      "MYELO": "Myelogram shows spinal stenosis L3-L4-L5 with compression"
+    },
+    "clinical_notes": "Patient presents with spinal stenosis L3-L4-L5. Symptoms include neurogenic claudication and bilateral leg weakness. Clinical examination and imaging studies performed. Recommended treatments: PELD, ESI, MED."
+  },
+  {
+    "patient_id": "P003",
+    "Study": {
+      "X-RAY": "Lumbar spine shows compression fracture L1",
+      "CT": "CT lumbar spine reveals compression fracture L1",
+      "MRI": "MRI lumbar spine demonstrates compression fracture L1 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with compression fracture L1. Symptoms include acute back pain after fall. Clinical examination and imaging studies performed. Recommended treatments: PVP, MED, f/u."
+  },
+  {
+    "patient_id": "P004",
+    "Study": {
+      "X-RAY": "Lumbar spine shows degenerative disc disease L5-S1",
+      "CT": "",
+      "MRI": "MRI lumbar spine demonstrates degenerative disc disease L5-S1 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with degenerative disc disease L5-S1. Symptoms include chronic lower back pain. Clinical examination and imaging studies performed. Recommended treatments: TPI, MED, 채진."
+  },
+  {
+    "patient_id": "P005",
+    "Study": {
+      "X-RAY": "Lumbar spine shows spondylolisthesis L4-L5",
+      "CT": "CT lumbar spine reveals spondylolisthesis L4-L5",
+      "MRI": "MRI lumbar spine demonstrates spondylolisthesis L4-L5 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with spondylolisthesis L4-L5. Symptoms include back pain with standing and walking. Clinical examination and imaging studies performed. Recommended treatments: LIF, lami, f/u."
+  },
+  {
+    "patient_id": "P006",
+    "Study": {
+      "X-RAY": "Lumbar spine shows disc herniation L4-L5",
+      "CT": "",
+      "MRI": "MRI lumbar spine demonstrates disc herniation L4-L5 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with disc herniation L4-L5. Symptoms include lower back pain with right leg radiation. Clinical examination and imaging studies performed. Recommended treatments: PEN, MED, f/u."
+  },
+  {
+    "patient_id": "P007",
+    "Study": {
+      "X-RAY": "",
+      "CT": "CT lumbar spine reveals spinal stenosis L3-L4-L5",
+      "MRI": "MRI lumbar spine demonstrates spinal stenosis L3-L4-L5 with associated findings",
+      "MYELO": "Myelogram shows spinal stenosis L3-L4-L5 with compression"
+    },
+    "clinical_notes": "Patient presents with spinal stenosis L3-L4-L5. Symptoms include neurogenic claudication and bilateral leg weakness. Clinical examination and imaging studies performed. Recommended treatments: PELD, ESI, MED."
+  },
+  {
+    "patient_id": "P008",
+    "Study": {
+      "X-RAY": "Lumbar spine shows compression fracture L1",
+      "CT": "CT lumbar spine reveals compression fracture L1",
+      "MRI": "MRI lumbar spine demonstrates compression fracture L1 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with compression fracture L1. Symptoms include acute back pain after fall. Clinical examination and imaging studies performed. Recommended treatments: PVP, MED, f/u."
+  },
+  {
+    "patient_id": "P009",
+    "Study": {
+      "X-RAY": "Lumbar spine shows degenerative disc disease L5-S1",
+      "CT": "",
+      "MRI": "MRI lumbar spine demonstrates degenerative disc disease L5-S1 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with degenerative disc disease L5-S1. Symptoms include chronic lower back pain. Clinical examination and imaging studies performed. Recommended treatments: TPI, MED, 채진."
+  },
+  {
+    "patient_id": "P010",
+    "Study": {
+      "X-RAY": "Lumbar spine shows spondylolisthesis L4-L5",
+      "CT": "CT lumbar spine reveals spondylolisthesis L4-L5",
+      "MRI": "MRI lumbar spine demonstrates spondylolisthesis L4-L5 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with spondylolisthesis L4-L5. Symptoms include back pain with standing and walking. Clinical examination and imaging studies performed. Recommended treatments: LIF, lami, f/u."
+  },
+  {
+    "patient_id": "P011",
+    "Study": {
+      "X-RAY": "Lumbar spine shows disc herniation L4-L5",
+      "CT": "",
+      "MRI": "MRI lumbar spine demonstrates disc herniation L4-L5 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with disc herniation L4-L5. Symptoms include lower back pain with right leg radiation. Clinical examination and imaging studies performed. Recommended treatments: PEN, MED, f/u."
+  },
+  {
+    "patient_id": "P012",
+    "Study": {
+      "X-RAY": "",
+      "CT": "CT lumbar spine reveals spinal stenosis L3-L4-L5",
+      "MRI": "MRI lumbar spine demonstrates spinal stenosis L3-L4-L5 with associated findings",
+      "MYELO": "Myelogram shows spinal stenosis L3-L4-L5 with compression"
+    },
+    "clinical_notes": "Patient presents with spinal stenosis L3-L4-L5. Symptoms include neurogenic claudication and bilateral leg weakness. Clinical examination and imaging studies performed. Recommended treatments: PELD, ESI, MED."
+  },
+  {
+    "patient_id": "P013",
+    "Study": {
+      "X-RAY": "Lumbar spine shows compression fracture L1",
+      "CT": "CT lumbar spine reveals compression fracture L1",
+      "MRI": "MRI lumbar spine demonstrates compression fracture L1 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with compression fracture L1. Symptoms include acute back pain after fall. Clinical examination and imaging studies performed. Recommended treatments: PVP, MED, f/u."
+  },
+  {
+    "patient_id": "P014",
+    "Study": {
+      "X-RAY": "Lumbar spine shows degenerative disc disease L5-S1",
+      "CT": "",
+      "MRI": "MRI lumbar spine demonstrates degenerative disc disease L5-S1 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with degenerative disc disease L5-S1. Symptoms include chronic lower back pain. Clinical examination and imaging studies performed. Recommended treatments: TPI, MED, 채진."
+  },
+  {
+    "patient_id": "P015",
+    "Study": {
+      "X-RAY": "Lumbar spine shows spondylolisthesis L4-L5",
+      "CT": "CT lumbar spine reveals spondylolisthesis L4-L5",
+      "MRI": "MRI lumbar spine demonstrates spondylolisthesis L4-L5 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with spondylolisthesis L4-L5. Symptoms include back pain with standing and walking. Clinical examination and imaging studies performed. Recommended treatments: LIF, lami, f/u."
+  },
+  {
+    "patient_id": "P016",
+    "Study": {
+      "X-RAY": "Lumbar spine shows disc herniation L4-L5",
+      "CT": "",
+      "MRI": "MRI lumbar spine demonstrates disc herniation L4-L5 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with disc herniation L4-L5. Symptoms include lower back pain with right leg radiation. Clinical examination and imaging studies performed. Recommended treatments: PEN, MED, f/u."
+  },
+  {
+    "patient_id": "P017",
+    "Study": {
+      "X-RAY": "",
+      "CT": "CT lumbar spine reveals spinal stenosis L3-L4-L5",
+      "MRI": "MRI lumbar spine demonstrates spinal stenosis L3-L4-L5 with associated findings",
+      "MYELO": "Myelogram shows spinal stenosis L3-L4-L5 with compression"
+    },
+    "clinical_notes": "Patient presents with spinal stenosis L3-L4-L5. Symptoms include neurogenic claudication and bilateral leg weakness. Clinical examination and imaging studies performed. Recommended treatments: PELD, ESI, MED."
+  },
+  {
+    "patient_id": "P018",
+    "Study": {
+      "X-RAY": "Lumbar spine shows compression fracture L1",
+      "CT": "CT lumbar spine reveals compression fracture L1",
+      "MRI": "MRI lumbar spine demonstrates compression fracture L1 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with compression fracture L1. Symptoms include acute back pain after fall. Clinical examination and imaging studies performed. Recommended treatments: PVP, MED, f/u."
+  },
+  {
+    "patient_id": "P019",
+    "Study": {
+      "X-RAY": "Lumbar spine shows degenerative disc disease L5-S1",
+      "CT": "",
+      "MRI": "MRI lumbar spine demonstrates degenerative disc disease L5-S1 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with degenerative disc disease L5-S1. Symptoms include chronic lower back pain. Clinical examination and imaging studies performed. Recommended treatments: TPI, MED, 채진."
+  },
+  {
+    "patient_id": "P020",
+    "Study": {
+      "X-RAY": "Lumbar spine shows spondylolisthesis L4-L5",
+      "CT": "CT lumbar spine reveals spondylolisthesis L4-L5",
+      "MRI": "MRI lumbar spine demonstrates spondylolisthesis L4-L5 with associated findings",
+      "MYELO": ""
+    },
+    "clinical_notes": "Patient presents with spondylolisthesis L4-L5. Symptoms include back pain with standing and walking. Clinical examination and imaging studies performed. Recommended treatments: LIF, lami, f/u."
+  }
+]
